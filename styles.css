@@ -1,50 +1,157 @@
-
-/* Your CSS Code here. */body {
-    font-family: Arial, sans-serif;
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    line-height: 1.6;
+    color: #333;
 }
 
+/* Header Styles */
 header {
-    background: #333;
-    color: white;
-    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
     text-align: center;
+    padding: 20px 0;
 }
 
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Navigation Styles */
 nav {
-    margin: 20px 0;
+    background-color: #444;
+    padding: 10px;
     text-align: center;
 }
 
-nav a {
-    margin: 0 15px;
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
     text-decoration: none;
-    color: #007BFF;
+    font-size: 1.2rem;
+    padding: 5px 10px;
 }
 
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Section Styles */
 section {
-    background: white;
-    margin: 20px;
     padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: #fff;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
+section h2 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+section p, section ul {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Actors Section */
+#actor ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+#actor ul li {
+    margin-bottom: 5px;
+}
+
+/* Quote Section */
+blockquote {
+    font-style: italic;
+    background-color: #eee;
+    padding: 10px 15px;
+    border-left: 5px solid #ccc;
+    margin: 20px 0;
+}
+
+/* Aside Styles */
 aside {
-    background: #eee;
-    padding: 10px;
-    margin: 20px;
-    border-radius: 5px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-left: 4px solid #666;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
 }
 
+aside h2 {
+    font-size: 1.8rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+aside p {
+    font-size: 1.1rem;
+    margin: 5px 0;
+}
+
+aside strong {
+    font-weight: bold;
+}
+
+/* Footer Styles */
 footer {
     text-align: center;
-    padding: 10px;
-    background: #333;
-    color: white;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    padding: 15px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 30px;
+    position: relative;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    section, aside {
+        padding: 15px;
+        margin: 10px;
+        max-width: 100%;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+    }
+
+    section h2, aside h2 {
+        font-size: 1.5rem;
+    }
 }
